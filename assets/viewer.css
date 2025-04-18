@@ -1,0 +1,14 @@
+/* Hide everything */
+.toolbarButton, #scaleSelectContainer, .verticalToolbarSeparator {
+    display: none;
+}
+
+/* Except these */
+#viewFind, #zoomOut, #zoomIn, #print {
+    display: block !important;
+}
+
+/* Don't annotate links */
+.linkAnnotation {
+    border: 0 !important;
+}
