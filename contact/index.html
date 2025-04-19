@@ -52,23 +52,10 @@
                           <i class="fas fa-bars"></i>
                       </button>
                       <div class="collapse navbar-collapse" id="navbar">
-                          <ul class="flex-column ms-md-auto mt-3 nav">
-                              
-                              <li class="nav-item">
-                                  <a class="d-inline-block nav-link p-0" href="bio/index.html">Bio</a>
-                              </li>
-                              
-                              <li class="nav-item">
-                                  <a class="d-inline-block nav-link p-0" href="contact/index.html">Contact</a>
-                              </li>
-                              
-                              <li class="nav-item">
-                                  <a class="d-inline-block nav-link p-0" href="cv/index.html">CV</a>
-                              </li>
-                              
-                              <li class="nav-item">
-                                  <a class="d-inline-block nav-link p-0" href="#">Tut</a>
-                              </li>
+                          <ul class="flex-column ms-md-auto mt-3 nav">  
+                            <li class="nav-item">
+                              <a id="history-back"class="d-inline-block nav-link p-0" href="#">⬅️Back</a>
+                          </li>
                               <li>
                                 <br/>
                                   <div id="google_translate_element"></div>
@@ -183,7 +170,10 @@ República Dominicana.
                   })
               })
             })()
-
+            const buttonback = document.getElementById('history-back');
+            buttonback.addEventListener('click', function() {
+                window.history.back();
+            });
         </script>
 
 <script type="text/javascript">
